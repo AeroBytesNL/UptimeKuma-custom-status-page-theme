@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ---------------------------------------
+ * Global theme options
+ * ---------------------------------------
+ * Author: AeroBytes
+ */
+:root {
+  --background-img-url: url('https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-740x463.jpg');
+
+  --text-color: white;
+  --uptime-precent-text-color: black;
+
+  --font-family: 'Roboto', sans-serif; /* With the current import Arial/Roboto is available */
+
+  --font-size-titles: 30px;
+  --font-size-monitor-names: 18px;
+  --font-size-small-text: 14px;
+  --font-size-service-icon: 30px; /* services operations/degraded icon size */
+
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+}
+
+/* Background image */
+body {
+  background: var(--background-img-url);
+  background-size: contain;
+}
+
+/* Title */
+.title-flex {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-titles) !important;
+  font-family: var(--font-family);
+}
+
+/* Incident boxes */
+.shadow-box.alert.bg-info {
+  background-color: rgba(13, 202, 240, 0.91) !important;
+  color: var(--text-color);
+}
+.shadow-box.alert.bg-warning {
+  background-color: rgba(255, 192, 7, 0.91) !important;
+  color: var(--text-color);
+}
+.shadow-box.alert.bg-danger {
+  background-color: rgba(220, 53, 69, 0.91) !important;
+  color: var(--text-color);
+}
+.shadow-box.alert.bg-primary {
+  background-color: rgba(13, 110, 253, 0.91) !important;
+  color: var(--text-color);
+}
+.shadow-box.alert.bg-light {
+  background-color: rgba(248, 249, 250, 0.91) !important;
+  color: var(--text-color);
+}
+.shadow-box.alert.bg-dark {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: var(--text-color);
+}
+
+/* Systems operational box */
+.dark .shadow-box:not(.alert) {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--text-color);
+}
+
+/* Systems operational icon */
+.ok {
+  font-size: var(--font-size-service-icon);
+}
+
+/* Partially degrades service icon */
+.fa-exclamation-circle {
+  font-size: var(--font-size-service-icon);
+}
+
+/* Description text */
+.alert-heading {
+  color: var(--text-color) !important;
+  font-size: var(--font-size-small-text);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+}
+
+/* Description text inside editor */
+.description {
+  color: var(--text-color);
+  font-size: var(--font-size-small-text);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+}
+
+/* Title for monitor groups */
+.group-title  {
+  color: var(--text-color) !important;
+  font-size: var(--font-size-titles);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+}
+
+/* Monitor name */
+.item-name {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-monitor-names);
+  font-family: var(--font-family);
+}
+
+/* Uptime % badge */
+.badge {
+  color: var(--uptime-precent-text-color) !important;
+  font-size: var(--font-size-small-text);
+  font-family: var(--font-family);
+}
+
+/* Tag badge */
+.extra-info {
+  margin-top: 4px !important;
+}
+
+/* Tag badge text */
+.tag-text {
+  font-size: var(--font-size-small-text);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family);
+}
+
+/* Text under uptime bars */
+.word {
+  color: var(--text-color) !important;
+  font-size: var(--font-size-small-text) !important;
+  font-family: var(--font-family);
+}
+
+/* Footer text */
+footer .alert-heading {
+  color: var(--text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-monitor-names);
+  font-family: var(--font-family);
+}
+
+/* Footer refresh information */
+footer .refresh-info {
+  color: var(--text-color) !important;
+  font-size: var(--font-size-small-text) !important;
+  font-family: var(--font-family) !important;
+}
