@@ -5,8 +5,8 @@ An Uptime Kuma status page theme.
 Created with CSS, to improve the looks of you're status page!
 
 ## Features
-* Clear comments so you can modify it yourself!
 * CSS variables to configure it to your needs.
+* Clear comments so you can modify it yourself!
 
 ## Screenshots
 Main:
