@@ -24,8 +24,21 @@
 
 /* Background image */
 body {
-  background: var(--background-img-url);
-  background-size: contain;
+  background: var(--background-img-url) no-repeat center top fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+  body {
+    background-attachment: fixed;
+    background-position: center top;
+  }
 }
 
 /* Title */
