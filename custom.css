@@ -6,7 +6,7 @@
  * Author: AeroBytes
  */
 :root {
-  --background-img-url: url('https://www.wallart.com/media/catalog/product/cache/5b18b93ddbe5d6592c6b175f41d24454/w/0/w03326-small.jpg');
+  --background-img-url: url('https://portfolio.aerobytes.nl//assets/plane-image-background-GqICQDCl.webp');
 
   --text-color: white;
   --uptime-precent-text-color: black;
@@ -24,7 +24,8 @@
 
 /* Background image */
 body {
-  background: var(--background-img-url) no-repeat center top fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  var(--background-img-url) no-repeat center top fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
